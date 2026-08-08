@@ -2,6 +2,7 @@ from analyzer import analyze_telemetry
 from telemetry import collect_telemetry
 from ai_assistant import generate_ai_report
 
+
 def generate_report(status, issues):
     print("\n========== SpaceGuard AI Mission Report ==========")
 
@@ -42,6 +43,7 @@ def main():
 
     issues = analyze_telemetry(telemetry)
     print("System analysis")
+
     
     if len(issues) == 0:
         status = "SAFE"
